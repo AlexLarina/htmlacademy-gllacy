@@ -17,6 +17,7 @@ function browserSyncReload() {
 function watchFiles() {
   gulp.watch("css/style.css").on('change', browserSyncReload);
   gulp.watch("index.html").on('change', browserSyncReload);
+  gulp.watch("catalog.html").on('change', browserSyncReload);
 }
 
 const watch = gulp.parallel(watchFiles, browserSync);
