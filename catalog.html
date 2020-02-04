@@ -90,17 +90,17 @@
           <h2 class="visually-hidden">Фильтры товаров</h2>
           <form method="get" class="filters__form">
             <div class="filters__row">
-              <div class="filters__item sorting">
-                <label for="sorting-params">Сортировка</label>
+              <fieldset class="filters__item sorting">
+                <legend for="sorting-params">Сортировка</legend>
                 <select class="sorting__items" name="sorting-paramets" id="sorting-params">
                   <option value="popular" selected>по популярности</option>
                   <option value="cheap">сначала недорогие</option>
                   <option value="expensive">сначала дорогие</option>
                   <option value="fat">по жирности</option>
                 </select>
-              </div>
-              <div class="filters__item range">
-                Цена:
+              </fieldset>
+              <fieldset class="filters__item range">
+                <legend>Цена:</legend>
                 <span class="range__item range__item--min">
                   <input type="number" value="100" name="range__item--min">
                   руб. -
@@ -109,24 +109,24 @@
                   <input type="number" value="500" name="range__item--max">
                   руб.
                 </span>
-              </div>
-              <div class="filters__item fat-content">
-                <span class="fat-content__title">Жирность:</span>
+              </fieldset>
+              <fieldset class="filters__item fat-content">
+                <legend class="fat-content__title">Жирность:</legend>
                 <label for="0-persent"><input type="radio" name="fat-content" value="0" id="0-persent">0%</label>
                 <label for="low-10-persent"><input type="radio" name="fat-content" value="low-10" id="low-10-persent" checked>до 10%</label>
                 <label for="low-30-persent"><input type="radio" name="fat-content" value="low-30" id="low-30-persent">до 30%</label>
                 <label for="over-30-persent"><input type="radio" name="fat-content" value="over-30" id="over-30-persent">выше 30%</label>
-              </div>
+              </fieldset>
 
             </div>
             <div class="filters__row">
-              <div class="filters__item additives">
+              <fieldset class="filters__item additives">
                 <label for="additives-choco"><input class="additives__item" type="checkbox" name="choco" id="additives-choco" checked>шоколадные</label>
                 <label for="additives-sugar"><input class="additives__item" type="checkbox" name="sugar" id="additives-sugar" checked>сахарные присыпки</label>
                 <label for="additives-fruits"><input class="additives__item" type="checkbox" name="fruits" id="additives-fruits">фрукты</label>
                 <label for="additives-syrup"><input class="additives__item" type="checkbox" name="syrup" id="additives-syrup">сиропы</label>
                 <label for="additives-jam"><input class="additives__item" type="checkbox" name="jam" id="additives-jam">джемы</label>
-              </div>
+              </fieldset>
               <button type="submit" name="button">Применить</button>
             </div>
           </form>
